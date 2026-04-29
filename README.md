@@ -1,5 +1,8 @@
 # StarScope Exoplanet Detection
 
+## Goal
+Build a model to classify stars as having exoplanets based on light curves
+
 This project uses Kepler light curve data to predict whether a star has an exoplanet.
 
 ## Team
@@ -20,6 +23,14 @@ The full data files are not uploaded to GitHub because they are too large.
 - checked class imbalance
 - plotted sample light curves
 - split train into train/validation using stratify
-- standardized data with no leakage
+- standardized data (fit on train only to avoid leakage)
 - reshaped data for 1D CNN
 - saved scaler
+- ready for model training
+
+## How to Run
+
+1. Download dataset from Kaggle link above
+2. Upload to Google Drive under:
+   Colab Notebooks/CS4375_Project/data/
+3. Open notebook in Colab and run all cells
